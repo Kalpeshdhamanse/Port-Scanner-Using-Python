@@ -44,16 +44,35 @@ Build a Python-based port scanner to:
 - No external libraries needed
 
 ---
-
 ## 🚀 How to Run
 
-1. Clone the repository or download the file.
-
-2. Run the following command in terminal:
-
+### 📦 1. Clone or Download
 ```bash
-python port_scanner.py <target_ip> <max_port>
+git clone https://github.com/your-username/port-scanner.git
+cd port-scanner
 ```
+2. Run the Script
+   ```
+   sudo python3 port_scanner.py
+ 3. Input Example
+    ```
+    Enter target IP address: 127.0.0.1
+    Enter start port: 22
+    Enter end port: 22
+
+    ```
+    💻 Tested on Kali Linux
+     Start SSH Service for Test
+    ```
+    sudo systemctl start ssh
+  
+ 
+🔎 Check Open Port (Optional)
+```
+sudo ss -tuln | grep :22
+
+
+    
 ### 💻 GUI in Action
  | ![](Screenshort/Screenshot_2025-06-24_02_27_07.png) |
 
